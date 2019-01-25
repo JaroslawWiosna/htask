@@ -1,3 +1,8 @@
+import CheckIfFileExists
+import System.Directory (doesFileExist)
 
-main = putStrLn "htask"
+main :: IO ()
+main = do
+	putStrLn "htask"
+	check doesFileExist "README.md"
 
