@@ -1,10 +1,6 @@
 dist: trusty
 os: linux
-language: haskell
 sudo: required
-
-compiler:
-    - ghc
 
 addons:
     apt:
