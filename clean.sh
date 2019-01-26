@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-rm -f htask.hi htask.o
+rm -f *.hi *.o
