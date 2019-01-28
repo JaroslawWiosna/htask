@@ -9,6 +9,7 @@ addons:
 
 before_script:
     - echo "Before build"
+    - echo "This is config file." >> ~/.htask
 
 script: 
     - ./build.sh
