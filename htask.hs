@@ -4,6 +4,12 @@ import System.Directory (doesFileExist)
 import ConfigFile
 import System.IO
 import Control.Monad
+import System.Environment -- getArgs
+
+listOfArgs :: IO String
+listOfArgs = do
+	args <- getArgs
+	return (args !! 0)
 
 main :: IO ()
 main = do
