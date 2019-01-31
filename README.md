@@ -1,5 +1,5 @@
 [![Licence](https://img.shields.io/github/license/JaroslawWiosna/htask.svg)](https://github.com/JaroslawWiosna/htask/blob/master/LICENSE)
-![Commits since](https://img.shields.io/github/commits-since/JaroslawWiosna/htask/v0.0.7.svg?style=flat)
+![Commits since](https://img.shields.io/github/commits-since/JaroslawWiosna/htask/v0.0.8.svg?style=flat)
 [![GitHub contributors](https://img.shields.io/github/contributors/JaroslawWiosna/htask.svg)](https://github.com/JaroslawWiosna/htask/graphs/contributors)
 [![Pull Requests](https://img.shields.io/github/issues-pr/JaroslawWiosna/htask.svg)](https://github.com/JaroslawWiosna/htask/pulls)
 [![Travis status](https://travis-ci.org/JaroslawWiosna/htask.svg?branch=master)](https://travis-ci.org/JaroslawWiosna/htask)
