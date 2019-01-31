@@ -1,7 +1,9 @@
 import CheckIfFileExists
 import HomeDirectory
-import System.Directory (doesFileExist)
 import ConfigFile
+import TaskList
+
+import System.Directory (doesFileExist)
 import System.IO
 import Control.Monad
 import System.Environment -- getArgs
@@ -16,9 +18,10 @@ printHelp = "htask help"
 
 initialBranchPrintHelp :: String -> IO ()
 initialBranchPrintHelp arg
-	| arg == "help" = putStrLn printHelp
-	| arg == "add"  = undefined
-	| otherwise     = undefined 
+	| arg == "help"  = putStrLn printHelp
+	| arg == "add"   = undefined
+	| arg == "next"  = taskNext
+	| otherwise      = undefined 
 
 main :: IO ()
 main = do
@@ -32,5 +35,6 @@ main = do
 	let singleWords = words contents
 	print singleWords
 	arg0 <- listOfArgs
+	putStrLn "\n\n"
 	initialBranchPrintHelp arg0	
 
