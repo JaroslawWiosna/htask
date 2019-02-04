@@ -5,7 +5,7 @@ import SplitOn
 
 taskNext :: IO ()
 taskNext = do
-	putStrLn "tasknext"
+	putStrLn "TaskNext"
 	pathOfConfigFile <- getPathOfConfigFile
 	putStrLn $ "The content of " ++ pathOfConfigFile ++ " is:"
 	handle <- openFile pathOfConfigFile ReadMode

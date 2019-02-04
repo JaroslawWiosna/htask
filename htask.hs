@@ -1,7 +1,9 @@
 import CheckIfFileExists
 import HomeDirectory
 import ConfigFile
+import TaskAdd
 import TaskNext
+import TaskDone
 
 import System.Directory (doesFileExist)
 import System.IO
@@ -19,9 +21,9 @@ printHelp = "htask help"
 initialBranch :: String -> IO ()
 initialBranch arg
 	| arg == "help" = putStrLn printHelp
-	| arg == "add"  = undefined
+	| arg == "add"  = taskAdd
 	| arg == "next" = taskNext
-	| arg == "done" = undefined
+	| arg == "done" = taskDone
 	| otherwise     = undefined 
 
 main :: IO ()
