@@ -1,4 +1,4 @@
-module TaskList where
+module TaskNext where
 import ConfigFile
 import System.IO
 import SplitOn

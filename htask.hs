@@ -1,7 +1,7 @@
 import CheckIfFileExists
 import HomeDirectory
 import ConfigFile
-import TaskList
+import TaskNext
 
 import System.Directory (doesFileExist)
 import System.IO
