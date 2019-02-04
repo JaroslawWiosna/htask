@@ -16,12 +16,13 @@ listOfArgs = do
 printHelp :: String
 printHelp = "htask help"
 
-initialBranchPrintHelp :: String -> IO ()
-initialBranchPrintHelp arg
-	| arg == "help"  = putStrLn printHelp
-	| arg == "add"   = undefined
-	| arg == "next"  = taskNext
-	| otherwise      = undefined 
+initialBranch :: String -> IO ()
+initialBranch arg
+	| arg == "help" = putStrLn printHelp
+	| arg == "add"  = undefined
+	| arg == "next" = taskNext
+	| arg == "done" = undefined
+	| otherwise     = undefined 
 
 main :: IO ()
 main = do
@@ -36,5 +37,5 @@ main = do
 	print singleWords
 	arg0 <- listOfArgs
 	putStrLn "\n\n"
-	initialBranchPrintHelp arg0	
+	initialBranch arg0	
 
