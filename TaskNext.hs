@@ -10,6 +10,7 @@ taskNext = do
 	putStrLn $ "The content of " ++ pathOfConfigFile ++ " is:"
 	handle <- openFile pathOfConfigFile ReadMode
 	contents <- hGetContents handle
+	hClose handle
 	putStrLn $ "--------"
 	putStrLn contents
 	putStrLn $ "--------"
