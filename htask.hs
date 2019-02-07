@@ -35,6 +35,7 @@ main = do
 	pathOfConfigFile <- getPathOfConfigFile
 	handle <- openFile pathOfConfigFile ReadMode
 	contents <- hGetContents handle
+	hClose handle
 	let singleWords = words contents
 	print singleWords
 	arg0 <- listOfArgs
